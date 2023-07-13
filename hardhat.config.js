@@ -8,7 +8,7 @@ module.exports = {
   networks: {
     goerli: {
       url :`https://goerli.infura.io/v3/bc73a0b80fd34825b19a824eb43a7b64`,
-      accounts: ["fe0754caf503c8ec78f2646c85f26cba83821493eae13d48b4889a01c2ccc92c"],
+      accounts: [""],
     },
   },
   etherscan : {
