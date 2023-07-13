@@ -1,0 +1,254 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xc90d3febC21E003F481f993a846480b97B2e029c",
+    "txHash": "0x61f7d04a7e73de8c62ef8f67cd6c2c1ba21a101c1e85b36ddd2b6c09d6ae55e8"
+  },
+  "proxies": [
+    {
+      "address": "0xe65860EDEB4A04818FDa4DefA2179554e5441312",
+      "txHash": "0xbcefd40d6ed3d06dcb8611b9c9b63ebb6f891093defe78a7539b7211b31b4393",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xcCF5aC6D8a3bb1F6264a5BFa43b21eE8f8eCD6D8",
+      "txHash": "0x1afa265a5464dc240b9cd30f0f3e683428ba6d1d4d23bd54c084c99aba4248f1",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x3B7cB9213416dC5180F102a13B1Fde2F6Dfa5eC6",
+      "txHash": "0x3a80af6b2a2f67f1e148ad56e7363e370dd349e5269296fcc9bf39b05c4b8431",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x46f7F0F161E8eC9E835D305833bf29374aC77eF6",
+      "txHash": "0xcb6b9ba82b3a072946056281fdf2a0c6759087992061b6a6cae85545a9e5799e",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x1D2EBc7dE84045421a78b2773A835A075Cf78E87",
+      "txHash": "0x6a9263602e5aedde00a9dd010aaada1b35c366a1035e4911cbad23e9f9510a32",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "921eedec844eb94d57b54d108c644c39db90dabecf68710f172547b720c95e23": {
+      "address": "0x59c0bd0045Dab5B56b68D08E55a2e602dCb4e381",
+      "txHash": "0x50d368f04c100fc8a669c1d36e29dab2d2d5c78ecf8dab92be53ed50a36e54bd",
+      "layout": {
+        "solcVersion": "0.8.18",
+        "storage": [
+          {
+            "label": "reserve1",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "Liquidity",
+            "src": "contracts/usdtpbmcpool.sol:25"
+          },
+          {
+            "label": "reserve2",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "Liquidity",
+            "src": "contracts/usdtpbmcpool.sol:26"
+          },
+          {
+            "label": "PBMC",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_contract(IERC20)77",
+            "contract": "Liquidity",
+            "src": "contracts/usdtpbmcpool.sol:27"
+          },
+          {
+            "label": "USDT",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_contract(IERC20)77",
+            "contract": "Liquidity",
+            "src": "contracts/usdtpbmcpool.sol:28"
+          },
+          {
+            "label": "totalLiquidity",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "Liquidity",
+            "src": "contracts/usdtpbmcpool.sol:29"
+          },
+          {
+            "label": "userLiquidity",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "Liquidity",
+            "src": "contracts/usdtpbmcpool.sol:30"
+          },
+          {
+            "label": "owner",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_address",
+            "contract": "Liquidity",
+            "src": "contracts/usdtpbmcpool.sol:34"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)77": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "33fa7729c226dae4e8c815d12c0063491bc069c8aa5ab0a0477f9d385e45b429": {
+      "address": "0x1bcDD5D8f8b4536E443B101f5d180CC7c307B44C",
+      "txHash": "0xe33a7bf636472dc4b7c22bec89075c97db0abd7578f3531609fdf8597e8da54e",
+      "layout": {
+        "solcVersion": "0.8.18",
+        "storage": [
+          {
+            "label": "initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "label": "initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "label": "______gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeSafe",
+            "src": "@openzeppelin/contracts-ethereum-package/contracts/GSN/Context.sol:37"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address",
+            "contract": "OwnableUpgradeSafe",
+            "src": "@openzeppelin/contracts-ethereum-package/contracts/access/Ownable.sol:18"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeSafe",
+            "src": "@openzeppelin/contracts-ethereum-package/contracts/access/Ownable.sol:78"
+          },
+          {
+            "label": "reserve1",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_uint256",
+            "contract": "Liquidity",
+            "src": "contracts/usdtpbmcpool.sol:27"
+          },
+          {
+            "label": "reserve2",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_uint256",
+            "contract": "Liquidity",
+            "src": "contracts/usdtpbmcpool.sol:28"
+          },
+          {
+            "label": "PBMC",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_contract(IERC20)330",
+            "contract": "Liquidity",
+            "src": "contracts/usdtpbmcpool.sol:29"
+          },
+          {
+            "label": "USDT",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_contract(IERC20)330",
+            "contract": "Liquidity",
+            "src": "contracts/usdtpbmcpool.sol:30"
+          },
+          {
+            "label": "totalLiquidity",
+            "offset": 0,
+            "slot": "155",
+            "type": "t_uint256",
+            "contract": "Liquidity",
+            "src": "contracts/usdtpbmcpool.sol:31"
+          },
+          {
+            "label": "userLiquidity",
+            "offset": 0,
+            "slot": "156",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "Liquidity",
+            "src": "contracts/usdtpbmcpool.sol:32"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(IERC20)330": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    }
+  }
+}

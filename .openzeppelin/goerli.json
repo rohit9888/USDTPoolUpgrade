@@ -1,0 +1,151 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xE2C6b809B7B3FBc7496d4193CdbB59aFECBAa79b",
+    "txHash": "0xa2d994b6cbe30ca81834d7fcf82eb2629776bfe7654f91c2c2d7a5700c5f54d0"
+  },
+  "proxies": [
+    {
+      "address": "0xD2b595D6eEEDc8CaeaBd6573948b1170103Da105",
+      "txHash": "0x9d2447dde539f8968a4487f9566adcdb5ce4b4248086990e0a54d5a50ec1613c",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "33fa7729c226dae4e8c815d12c0063491bc069c8aa5ab0a0477f9d385e45b429": {
+      "address": "0x3217109d0CB957eC3CB4602282Af6bc21d233168",
+      "txHash": "0xa0591a9b1bb1c99cae6cfaeab3c958efb7d33c295961a6f472c3c6fe53815d86",
+      "layout": {
+        "solcVersion": "0.8.18",
+        "storage": [
+          {
+            "label": "initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "label": "initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "label": "______gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeSafe",
+            "src": "@openzeppelin/contracts-ethereum-package/contracts/GSN/Context.sol:37"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address",
+            "contract": "OwnableUpgradeSafe",
+            "src": "@openzeppelin/contracts-ethereum-package/contracts/access/Ownable.sol:18"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeSafe",
+            "src": "@openzeppelin/contracts-ethereum-package/contracts/access/Ownable.sol:78"
+          },
+          {
+            "label": "reserve1",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_uint256",
+            "contract": "Liquidity",
+            "src": "contracts/usdtpbmcpool.sol:27"
+          },
+          {
+            "label": "reserve2",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_uint256",
+            "contract": "Liquidity",
+            "src": "contracts/usdtpbmcpool.sol:28"
+          },
+          {
+            "label": "PBMC",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_contract(IERC20)330",
+            "contract": "Liquidity",
+            "src": "contracts/usdtpbmcpool.sol:29"
+          },
+          {
+            "label": "USDT",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_contract(IERC20)330",
+            "contract": "Liquidity",
+            "src": "contracts/usdtpbmcpool.sol:30"
+          },
+          {
+            "label": "totalLiquidity",
+            "offset": 0,
+            "slot": "155",
+            "type": "t_uint256",
+            "contract": "Liquidity",
+            "src": "contracts/usdtpbmcpool.sol:31"
+          },
+          {
+            "label": "userLiquidity",
+            "offset": 0,
+            "slot": "156",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "Liquidity",
+            "src": "contracts/usdtpbmcpool.sol:32"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(IERC20)330": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    }
+  }
+}
