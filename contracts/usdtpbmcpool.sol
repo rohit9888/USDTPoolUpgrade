@@ -180,9 +180,7 @@ contract Liquidity is Initializable, OwnableUpgradeSafe {
             "INSUFFICIENT_LIQUIDITY"
         );
         (amountA, amountB) = burn(liquidity);
-        //PBMC.transfer(to, amountA);
         PBMC.safeTransfer(to, amountA);
-        //USDT.transfer(to, amountB);
         USDT.safeTransfer(to, amountB);
         userLiquidity[msg.sender] -= liquidity;
         reserve1 = PBMC.balanceOf(address(this));
@@ -204,9 +202,7 @@ contract Liquidity is Initializable, OwnableUpgradeSafe {
         uint256 denominator = reserveIn.mul(1000).add(amountInWithFee);
         uint256 amountOut = numerator / denominator;
         require(amountOut <= reserveOut, "UniswapV2: INSUFFICIENT_LIQUIDITY");
-        // PBMC.transferFrom(_to, address(this), amountIn);
         PBMC.safeTransferFrom(_to, address(this), amountIn);
-        // USDT.transfer(_to, amountOut);
         USDT.safeTransfer(_to, amountOut);
         reserve1 = PBMC.balanceOf(address(this));
         reserve2 = USDT.balanceOf(address(this));
@@ -226,9 +222,7 @@ contract Liquidity is Initializable, OwnableUpgradeSafe {
         uint256 denominator = reserveIn.mul(1000).add(amountInWithFee);
         uint256 amountOut = numerator / denominator;
         require(amountOut <= reserveOut, "UniswapV2: INSUFFICIENT_LIQUIDITY");
-        // USDT.transferFrom(_to, address(this), amountIn);
         USDT.safeTransferFrom(_to, address(this), amountIn);
-        //PBMC.transfer(_to, amountOut);
         PBMC.safeTransfer(_to, amountOut);
         reserve1 = PBMC.balanceOf(address(this));
         reserve2 = USDT.balanceOf(address(this));
